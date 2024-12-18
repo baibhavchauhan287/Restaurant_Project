@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Indian Zayka Restaurant</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap" rel="stylesheet">
+
+    <!-- add font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!---Script Ragini Singh-->
+    <script src="/js/language.js" defer></script>
+
+    <style>
+        .modal-backdrop {
+    z-index: 0;
+    
+}
+#languageSwitcher{
+    margin-left:10px;
+}
+.drop-down{
+    margin-left:10px;
+    margin-right:10px;
+}
+h1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;;
+}
+/*.btn-2{
+    padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 100px;
+            cursor: pointer;
+            background-color: #fff;
+        }
+
+        */
+.img1{
+            width:20px;
+            height:20px;
+        }
+
+/*#heading{
+    font-family: 'cario',sans-serif;
+}
+    */
+    .team-item{
+        height: 350px !important;
+    }
+    .lang1{
+        height: 40px !important;
+        width: 80px;
+        background-color: #feb445;
+        border-color: #feaa2d;
+        color: #FFFFFF;
+    }
+    </style>
+
+    <!-- Template Stylesheet -->
+ <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only" data-translate="loading">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+              <!-- <h1 class="text-primary m-0" data-translate="indanh1"><i class="fa fa-utensils me-3" id="heading"></i>INDIAN ZAYKA</h1> -->
+               <h1 class="text-primary m-0 fa fa-utensils me-3" data-translate="indanh1">INDIAN ZAYKA</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link active" data-translate="home">Home</a>
+                        <a href="about.html" class="nav-item nav-link" data-translate="about1">About</a>
+                        <a href="service.html" class="nav-item nav-link" data-translate="service1">Service</a>
+                        <a href="menu.html" class="nav-item nav-link" data-translate="menu1">Menu</a>
+                        <div class="nav-item dropdown">
+                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-translate="page1">Pages</a>
+                            <div class="dropdown-menu m-0">
+                        <a href="booking.html" class="dropdown-item" data-translate="book1" >Booking</a>
+                      <a href="team.html" class="dropdown-item" data-translate="our1">Our Team</a>
+                         <a href="testimonial.html" class="dropdown-item" data-translate="test1">Testimonial</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link" data-translate="contact1">Contact</a>
+                        </div>
+
+                            <!-- Language switcher -->
+
+                      <select id="languageSwitcher" class="drop-down btn-2 lang1" onchange="changeDirection(this.value)"
+                        class="nav-item nav-link ">
+                            <option value="en"><span><img  src="./img/usa.jpg" class="img1"  alt="USA"></span>USA</option>
+                            <option value="ar"><img src="./img/saudi.JPG" class="img1" alt="Arabic">عربي</option>
+                        </select>
+                
+                 <!--  <button id="languageSwitcher" class="drop-down btn-2 nav-item nav-link" onclick="toggleLanguage()">
+                        <img id="flagIcon" src="/img/usa.jpg" alt="Language Icon" class="img1">
+                        <span id="languageLabel">English</span>
+                    </button>
+                -->
+                    
+
+                    <!-- pop up here for booking form -->
+                  <a href="" class="btn btn-primary py-2 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal" data-translate="book2">Book A Table</a> 
+                      
+                  <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" data-translate="table1">Table Booking here</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      <div class="modal-body">
+          <form id="bookingForm">
+              <div class="mb-3">
+                  <label for="namee" class="form-label" data-translate="name1">Name:</label>
+                  <input type="text" class="form-control" id="namee" required>
+              </div>
+              <div class="mb-3">
+                  <label for="emaill" class="form-label" data-translate="mail">Email:</label>
+                  <input type="email" class="form-control" id="emaill" required>
+              </div>
+              <div class="mb-3">
+                  <label for="phonee" class="form-label" data-translate="
+                  phone1">Phone:</label>
+                  <input type="tel" class="form-control" id="phonee" required>
+              </div>
+              <div class="mb-3">
+                  <label for="datee" class="form-label" data-translate="date1">Date:</label>
+                  <input type="date" class="form-control" id="datee" required>
+              </div>
+              <div class="mb-3">
+                  <label for="timee" class="form-label" data-translate="time">Time:</label>
+                  <input type="time" class="form-control" id="timee" required>
+              </div>
+              <div class="mb-3">
+                  <label for="peoplee" class="form-label">Number of People:</label>
+                  <input type="number" class="form-control" id="peoplee" min="1" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Confirm Booking</button>
+          </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+   <!-- pop up table booking end here        -->
+
+   <!-- Notification Message -->
+   <div id="confirmationMessage" class="mt-3"></div>
+   <div id="notification" class="alert alert-success d-none mt-3" role="alert">
+       Booking successfully done!
+   </div>
+</div>
+ </div>
+</nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container my-5 py-5">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 data-translate="enjoy" class="display-3 text-white animated slideInLeft" >Enjoy Our<br ></h1><h1 data-translate="meal"  class="display-3 text-white animated slideInLeft">Delicious Meal</h1>
+                            <p class="text-white animated slideInLeft mb-4 pb-2" data-translate="p1">Indulge in a culinary journey with our flavorful dishes, expertly crafted using the finest ingredients. Each bite is a celebration of authentic Indian flavors, perfect for satisfying your cravings and delighting your taste buds. Join us for a memorable dining experience!</p>
+                            <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft" data-translate="book3">Book A Table</a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                            <img class="img-fluid" src="./img/hero2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <h1 data-translate="Explore1">Explore Our Service</h1>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                                <h5 data-translate="mast">Master Chefs</h5>
+                                <p data-translate="mast-p">Master chefs combine culinary expertise, creativity, and leadership to craft exceptional dishes. They innovate menus, mentor staff, ensure quality, and enhance dining experiences, shaping the identity and success of their restaurants.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                                <h5 data-translate="quali">Quality Food</h5>
+                                <p data-translate="quali-p">Quality food emphasizes fresh ingredients, balanced flavors, and beautiful presentation. It prioritizes safety, consistency, nutritional value, and sustainable practices, ensuring a memorable dining experience that satisfies and delights customers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
+                                <h5 data-translate="onlin">Online Order</h5>
+                                <p data-translate="onlin-p">Online ordering streamlines the dining experience, allowing customers to conveniently browse menus, customize orders, and pay digitally. It enhances accessibility, increases restaurant reach, and supports efficient food delivery and pickup services.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                                <h5 data-translate="ser">24/7 Service</h5>
+                                <p data-translate="ser-p">24/7 service ensures customers can access products or support anytime, enhancing convenience and satisfaction. It builds loyalty, meets diverse needs, and accommodates different schedules, fostering a reliable and responsive experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="./img/bpic1.png">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="./img/bpic3.png" style="margin-top: 25%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="./img/about-3.jpg">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="./img/about-4.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+             <h5 class="section-title ff-secondary text-start text-primary fw-normal" data-translate="about2">About Us</h5>
+      <!-- <h2 class="mb-4" data-translate="wel">Welcome to <i class="fa fa-utensils text-primary me-2" ></i><span data-translate="india-a">INDIAN ZAYKA</span></h2> -->
+
+
+       <h2 class="mb-4"><span data-translate="wel">Welcome to</span> <i class="fa fa-utensils text-primary me-2" ></i> <span data-translate="india-a">INDIAN ZAYKA</span></h2>
+
+                        <p class="mb-4" data-translate="about-india">At Indian Zayka, we celebrate the rich flavors and vibrant culture of Indian cuisine. Our chefs craft authentic dishes using fresh, high-quality ingredients, blending tradition with innovation. Experience a warm atmosphere and exceptional service, whether dining in or ordering online. Join us on a culinary journey that delights the senses!</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15</h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0" data-translate="year">Years of</p>
+                                        <h6 class="text-uppercase mb-0" data-translate="exper">Experience</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0" data-translate="popul">Popular</p>
+                                        <h6 class="text-uppercase mb-0" data-translate="mast-c">Master Chefs</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary py-3 px-5 mt-2" href="" data-translate="read-m">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Menu Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal" data-translate="food-m">Food Menu</h5>
+                    <h1 class="mb-5" data-translate="most-pop">Most Popular Items</h1>
+                </div>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                                <i class="fa fa-coffee fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body" data-translate="popl">Popular</small>
+                                    <h6 class="mt-n1 mb-0" data-translate="break">Breakfast</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                                <i class="fa fa-hamburger fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body" data-translate="Special-m">Special</small>
+                                    <h6 class="mt-n1 mb-0" data-translate="laun">Launch</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                                <i class="fa fa-utensils fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body" data-translate="love">Lovely</small>
+                                    <h6 class="mt-n1 mb-0" data-translate="dinn">Dinner</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/idli.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="idli-m">Idli - 4pis</span>
+                                                <span class="text-primary">Rs.60</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="idli-a">Steamed rice cakes served with coconut chutney and sambar.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/dosa.png" alt=""style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="dosa-m">Dosa</span>
+                                                <span class="text-primary">Rs.80</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="dosa-a">Crispy rice and lentil crepes, often filled with spiced potatoes, served with chutneys and sambar.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/aalu2.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="aalu-m">Aalu Paratha - 2pis</span>
+                                                <span class="text-primary">Rs.110</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="aalu-a">Stuffed flatbread with spiced potatoes, served with yogurt and pickles.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/chole.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="chole-m">Chole Bhature - 2pis</span>
+                                                <span class="text-primary">Rs. 160</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="chole-a">Spicy chickpeas served with fluffy fried bread</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/upma.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="upma-m">Upma</span>
+                                                <span class="text-primary">Rs. 60</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="upma-a">Savory semolina porridge cooked with vegetables and spices</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/poha.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="poha-m">Poha</span>
+                                                <span class="text-primary">Rs. 70</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="poha-a"> Flattened rice cooked with turmeric, mustard seeds, and peas, garnished with peanuts and coriander.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                             <div class="d-flex align-items-center">
+                             <img class="flex-shrink-0 img-fluid rounded" src="./img/vada.png" alt="" style="width: 90px;">
+                             <div class="w-100 d-flex flex-column text-start ps-4">
+                             <h5 class="d-flex justify-content-between border-bottom pb-2">
+                             <span data-translate="vada-m">Vada</span>
+                            <span class="text-primary">Rs. 60</span>
+                            </h5>
+                       <small class="fst-italic" data-translate="vada-a">Lentil fritters served with chutney and sambar.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/bread.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="bread-m">Bread Omelette</span>
+                                                <span class="text-primary">Rs. 59</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="bread-a">A simple yet popular dish, featuring an omelet cooked with bread, spices, and herbs.</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/thali.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="veg">Veg Thali</span>
+                                                <span class="text-primary">Rs. 240</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="plates">A platter featuring a variety of dishes, including rice, dal, curries,panner, pickles, and bread.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/biryani.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="Chiken">Chicken Biryani</span>
+                                                <span class="text-primary">Rs. 220</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="aromatic">Aromatic rice dish cooked with marinated meat or Chicken, flavored with spices and herbs.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/panner.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="Paneer">Paneer Butter Masala</span>
+                                                <span class="text-primary">Rs. 200</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="Creamy"> Creamy tomato-based curry with paneer (Indian cottage cheese).</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/chicken.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="Chiken-2">Chicken Tikka Masala</span>
+                                                <span class="text-primary">Rs. 230</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="Grilled">Grilled chicken pieces in a rich, spiced tomato sauce</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/dalmakhni.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="dal makhani">Dal Makhani</span>
+                                                <span class="text-primary">Rs. 180</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="slow-cooked">Slow-cooked black lentils in a buttery sauce, often served with rice or naan.</small>
+                                        </div>
+                                    </div>
+                                </div>        
+
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/gobi.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="aloo">Aloo Gobi</span>
+                                                <span class="text-primary">Rs. 160</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="spiced">Spiced potato and cauliflower dish, often served as a side</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/butter-chicken.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="Butt">Butter Chicken</span>
+                                                <span class="text-primary">Rs. 240</span>
+                                            </h5>
+                                            <small class="fst-italic">Tender chicken in a creamy tomato sauce</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/palak-panner.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="Palak">Palak Paneer</span>
+                                                <span class="text-primary">Rs. 180</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="Paneer1">Paneer in a rich butter and tomato gravy</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/chole1.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="Chana">Chana Masala</span>
+                                                <span class="text-primary">Rs. 170</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="Spiced">Spiced chickpeas cooked with onions and tomatoes </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/dalmakhni.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="Dal">Dal Makhani</span>
+                                                <span class="text-primary">Rs. 149</span>
+                                            </h5>
+                                            <small class="fst-italic">Creamy black lentils slow-cooked with spices</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/paratha.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="Para">Paratha</span>
+                                                <span class="text-primary">Rs. 30</span>
+                                            </h5>
+                                            <small class="fst-italic"> Flaky, layered flatbread (plain or stuffed).</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/Pannerbiryani.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="Paneer-B">Panner Biryani</span>
+                                                <span class="text-primary">Rs. 189</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="Aro">Aromatic basmati rice cooked with marinated Panner or vegetables.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/jeera.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="jeera">Jeera Rice</span>
+                                                <span class="text-primary">Rs. 169</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="Basmati">Basmati rice tempered with cumin seeds</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/pulao.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="Pula">Pulao</span>
+                                                <span class="text-primary">Rs. 139</span>
+                                            </h5>
+                                            <small class="fst-italic"  data-translate="Rice">Rice cooked with mixed vegetables and spices</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu End -->
+
+
+        <!-- Reservation Start -->
+        <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <div class="video">
+                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 bg-dark d-flex align-items-center">
+                    <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal" data-translate="Reservation">Reservation</h5>
+                        <h1 class="text-white mb-4" data-translate="Book">Book A Table Online</h1>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name" data-translate="Name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="البريد الإلكتروني الخاص بك">
+                                        <label for="email" data-translate="Email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating date" id="date3" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
+                                        <label for="datetime" data-translate="Date">Date & Time</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="select1">
+                                          <option value="1" data-translate="people1">People 1</option>
+                                          <option value="2" data-translate="people2">People 2</option>
+                                          <option value="3" data-translate="people3">People 3</option>
+                                        </select>
+                                        <label for="select1" data-translate="no1">No Of People</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Special Request" id="message" style="height: 100px"></textarea>
+                                        <label for="message" data-translate="spec">Special Request</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit" data-translate="now1">Book Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always" allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Reservation Start -->
+
+        <!-- Team Start -->
+        <div class="container-xxl pt-5 pb-3">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal"  data-translate="team1">Team Members</h5>
+                    <h1 class="mb-5" data-translate="our2">Our Master Chefs</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/chef1.png" alt="">
+                            </div>
+                            <h5 class="mb-0" data-translate="sanjay">Sanjay Thumma</h5>
+                            <small data-translate="chef-1">Chef</small>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/chef2.png" alt="">
+                            </div>
+                            <h5 class="mb-0" data-translate="pankaj">Pankaj Bhadouria</h5>
+                            <small data-translate="chef-2">Chef</small>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/chef3 singh.png" alt="">
+                            </div>
+                            <h5 class="mb-0" data-translate="harjoyt">Harjyot Singh</h5>
+                            <small data-translate="chef-3">Chef</small>
+                             
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/chef4.png" alt="">
+                            </div>
+                            <h5 class="mb-0" data-translate="Bhikhi1">Bhikhi</h5>
+                            <small data-translate="nepali">Nepali Chef</small>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+     <!-- Testimonial Start -->
+     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h5 class="section-title ff-secondary text-center text-primary fw-normal" data-translate="test-t">Testimonial</h5>
+                <h1 class="mb-5" data-translate="our-c">Our Clients Say!!!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item bg-transparent border rounded p-4">
+                    <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                    <p data-translate="sep-c">Specializing in exquisite custom cakes for birthdays, anniversaries, and kids' celebrations, delivering quality and creativity with every order.</p>
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                        <div class="ps-3">
+                            <h5 class="mb-1" data-translate="cl-t">Client Name</h5>
+                            <small data-translate="pro-t">Profession</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item bg-transparent border rounded p-4">
+                    <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                    <p data-translate="sep-c">Specializing in exquisite custom cakes for birthdays, anniversaries, and kids' celebrations, delivering quality and creativity with every order.</p>
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
+                        <div class="ps-3">
+                            <h5 class="mb-1" data-translate="cl-t">Client Name</h5>
+                            <small data-translate="pro-t">Profession</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item bg-transparent border rounded p-4">
+                    <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                    <p data-translate="sep-c">Specializing in exquisite custom cakes for birthdays, anniversaries, and kids' celebrations, delivering quality and creativity with every order.</p>
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
+                        <div class="ps-3">
+                            <h5 class="mb-1" data-translate="cl-t">Client Name</h5>
+                            <small data-translate="pro-t">Profession</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item bg-transparent border rounded p-4">
+                    <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                    <p data-translate="sep-c">Specializing in exquisite custom cakes for birthdays, anniversaries, and kids' celebrations, delivering quality and creativity with every order.</p>
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
+                        <div class="ps-3">
+                            <h5 class="mb-1" data-translate="cl-t">Client Name</h5>
+                            <small data-translate="pro-t">Profession</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4" data-translate="comp">Company</h4>
+                        <a class="btn btn-link" href="" data-translate="about-f">About Us</a>
+                        <a class="btn btn-link" href="" data-translate="con-f">Contact Us</a>
+                        <a class="btn btn-link" href="" data-translate="Reservation-f">Reservation</a>
+                        <a class="btn btn-link" href="" data-translate="pri-f">Privacy Policy</a>
+                        <a class="btn btn-link" href="" data-translate="term">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4" data-translate="cont-f">Contact</h4>
+                        <p class="mb-2" data-translate="konda"><i class="fa fa-map-marker-alt me-3"></i>Kondapur, Hyderabad, India</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>indianzaykafood@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4" data-translate="open">Opening</h4>
+                        <h5 class="text-light fw-normal" data-translate="mon-sat">Monday - Saturday</h5>
+                        <p>11AM - 11PM</p>
+                        <h5 class="text-light fw-normal" data-translate="sun">Sunday</h5>
+                        <p>02PM - 12PM</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4" data-translate="news">Newsletter</h4>
+                        <p data-translate="stay-f">Stay updated with our newsletter for exclusive recipes, Cooking tips, and delicious Foods promotions!</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2" data-translate="sign">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#" data-translate="aero">Aerobyte Innovations </a> , <span data-translate="all-f">All Right Reserved.</span> 
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="" data-translate="home-f">Home</a>
+                                <a href="" data-translate="cook-f">Cookies</a>
+                                <a href="" data-translate="help-f">Help</a>
+                                <a href="" data-translate="fqa">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+     <!-- <script>
+             async function loadTranslations() {
+                 const response = await fetch('translate.json');
+                 return await response.json();
+                 }
+        
+                 async function updateLanguage(language) {
+                 const translations = await loadTranslations();
+        
+                // Find all elements with a data-translate attribute
+                     document.querySelectorAll('[data-translate]').forEach(element => {
+                    const key = element.getAttribute('data-translate');
+                 element.innerText = translations[key][language];
+                 });
+                 }
+
+                // Event listener for the language switcher
+                 document.getElementById('languageSwitcher').addEventListener('change', function() {
+                 const selectedLanguage = this.value;
+                 updateLanguage(selectedLanguage);
+                 });
+        
+            // Default language set to English on page load
+             window.onload = function() {
+                updateLanguage('en'); 
+             };
+            </script>  -->
+
+           
+    <!-- Template Javascript -->
+    <script src="js/main.js" defer></script>
+    <script src="js/language.js"></script>
+   <script>
+        // function changeDirection(language) {
+        // Change the text direction based on the selected language
+//         if (language === 'ar') {
+//           document.body.style.direction = 'rtl';
+// document.body.style.fontfamily="'cario,sans-sarif'" ; 
+//         }
+// Right-to-left for Arabic
+//           } else {
+//             document.body.style.direction = 'ltr'; 
+//             document.body.style.fontfamily="'cario,sans-sarif'" ; // Right-to-left for Arabic
+        
+//  // Left-to-right for English or other languages
+//           }
+
+            // const url = new URL(window.location);
+            // url.searchParams.set('lang', language);
+            // window.history.replaceState(null, '', url);
+        // }
+
+          // Load the language preference from query parameters on page load
+    //    function loadLanguageFromQueryParams() {
+    //        const urlParams = new URLSearchParams(window.location.search);
+    //         const language = urlParams.get('lang') || 'en'; // Default to English if no param
+    //         changeDirection(language);
+    //    }
+
+         // Call loadLanguageFromQueryParams on page load
+    // window.onload = loadLanguageFromQueryParams;
+
+      </script>
+      
+</body>
+
+</html>

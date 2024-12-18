@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Dropdown</title>
+    <style>
+        /* Basic styling for the dropdown */
+        .custom-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-toggle {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            z-index: 1;
+            width: 100%;
+            min-width: 120px;
+        }
+
+        .dropdown-item {
+            padding: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .dropdown-item:hover {
+            background-color: #f1f1f1;
+        }
+
+        .flag-icon {
+            width: 20px;
+            height: auto;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-dropdown">
+        <!-- Dropdown toggle button displaying selected language -->
+        <div class="dropdown-toggle" onclick="toggleDropdown()">
+            <img id="dropdownImage" src="/img/usa.jpg" class="flag-icon" alt="Selected Language"> 
+            <span id="selectedLanguage">English</span>
+        </div>
+        
+        <!-- Dropdown menu options -->
+        <div class="dropdown-menu" id="dropdownMenu">
+            <div class="dropdown-item" onclick="selectLanguage('en')">
+                <img src="/img/usa.jpg" class="flag-icon" alt="USA"> English
+            </div>
+            <div class="dropdown-item" onclick="selectLanguage('ar')">
+                <img src="/img/saudi.JPG" class="flag-icon" alt="Arabic"> عربي
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Toggle dropdown menu visibility
+        function toggleDropdown() {
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // Close dropdown if clicked outside
+        document.addEventListener('click', function(event) {
+            const dropdown = document.querySelector('.custom-dropdown');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+
+            if (!dropdown.contains(event.target)) {
+                dropdownMenu.style.display = 'none';
+            }
+        });
+
+        // Function to change the language and update dropdown button content
+        function selectLanguage(language) {
+            const selectedLanguage = document.getElementById('selectedLanguage');
+            const dropdownImage = document.getElementById('dropdownImage'); // Image in the dropdown toggle
+
+            if (language === 'en') {
+                dropdownImage.src = '/img/usa.jpg'; // Update to USA flag image
+                selectedLanguage.innerText = 'English';
+            } else if (language === 'ar') {
+                dropdownImage.src = '/img/saudi.JPG'; // Update to Saudi flag image
+                selectedLanguage.innerText = 'عربي';
+            }
+
+            // Close the dropdown after selection
+            document.getElementById('dropdownMenu').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Diwali!</title>
+    <style>
+        /* Body styling */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #1a1a1a;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            color: #ffdb4d;
+        }
+
+        /* Greeting text */
+        .greeting {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .greeting h1 {
+            font-size: 3em;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        /* Text glow effect */
+        @keyframes glow {
+            0% { color: #ffdb4d; text-shadow: 0 0 10px #ffdb4d, 0 0 20px #ffdb4d, 0 0 30px #ffb347; }
+            100% { color: #ffd700; text-shadow: 0 0 20px #ffd700, 0 0 30px #ff8c00, 0 0 40px #ff8c00; }
+        }
+
+        /* Diya container */
+        .diya-container {
+            position: relative;
+            width: 80px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            margin-top: 20px;
+        }
+
+        /* Diya styling */
+        .diya {
+            width: 60px;
+            height: 30px;
+            background-color: #8b4513;
+            border-radius: 50px 50px 0 0;
+            position: relative;
+        }
+
+        /* Flame styling */
+        .flame {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            width: 20px;
+            height: 35px;
+            background-color: #ff4500;
+            border-radius: 50% 50% 30% 30%;
+            transform: translateX(-50%);
+            animation: flicker 0.15s infinite alternate;
+        }
+
+        .flame:before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            width: 10px;
+            height: 20px;
+            background-color: #ffd700;
+            border-radius: 50% 50% 30% 30%;
+            transform: translateX(-50%);
+        }
+
+        /* Flicker animation */
+        @keyframes flicker {
+            0% { transform: translateX(-50%) scale(1); }
+            100% { transform: translateX(-50%) scale(1.05); }
+        }
+
+        /* Sparkler effect */
+        .sparkler {
+            position: absolute;
+            bottom: 15px;
+            width: 2px;
+            height: 40px;
+            background-color: #ffdb4d;
+            animation: sparkle 0.5s infinite alternate;
+        }
+
+        /* Sparkle animation */
+        @keyframes sparkle {
+            0% { box-shadow: 0 0 5px #ffdb4d, 0 0 10px #ffdb4d; }
+            100% { box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700; }
+        }
+
+        /* Cracker firework effect */
+        .firework {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: explode 1s ease-out infinite;
+        }
+
+        /* Particle styling */
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background-color: #ff4500;
+            border-radius: 50%;
+            opacity: 0;
+            animation: particle-animation 1s ease-out infinite;
+        }
+
+        /* Exploding particles */
+        @keyframes explode {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0; transform: scale(1.5); }
+        }
+
+        /* Particle animations */
+        @keyframes particle-animation {
+            0% { opacity: 1; transform: translate(0, 0); }
+            100% {
+                opacity: 0;
+                transform: translate(var(--x), var(--y));
+            }
+        }
+
+        /* Particle position offsets for explosion effect */
+        .particle:nth-child(1) { --x: 20px; --y: -30px; }
+        .particle:nth-child(2) { --x: -20px; --y: -30px; }
+        .particle:nth-child(3) { --x: 30px; --y: 20px; }
+        .particle:nth-child(4) { --x: -30px; --y: 20px; }
+        .particle:nth-child(5) { --x: 0; --y: 40px; }
+    </style>
+</head>
+<body>
+    <!-- Greeting text -->
+    <div class="greeting">
+        <h1>✨ Happy Diwali! ✨</h1>
+    </div>
+
+    <!-- Diya with flame and sparkler effect -->
+    <div class="diya-container">
+        <div class="diya">
+            <div class="flame"></div>
+            <div class="sparkler"></div>
+        </div>
+    </div>
+
+    <!-- Firecracker animation -->
+    <div class="firework">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+</body>
+</html>

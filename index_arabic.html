@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Indian Zayka Restaurant</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .modal-backdrop {
+    z-index: 0;
+    
+}
+    </style>
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>زيكا الهندية</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link active">بيت</a>
+                        <a href="about.html" class="nav-item nav-link">عن</a>
+                        <a href="service.html" class="nav-item nav-link">خدمة</a>
+                        <a href="menu.html" class="nav-item nav-link">قائمة طعام</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">الصفحات</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="booking.html" class="dropdown-item">الحجز</a>
+                                <a href="team.html" class="dropdown-item">فريقنا</a>
+                                <a href="testimonial.html" class="dropdown-item">شهادة</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">اتصال</a>
+                    </div>
+                    <!-- pop up here for booking form -->
+                  <a href="" class="btn btn-primary py-2 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">احجز طاولة</a> 
+                      
+                  <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">حجز الطاولة لهاe</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      <div class="modal-body">
+          <form id="bookingForm">
+              <div class="mb-3">
+                  <label for="namee" class="form-label">اسم:</label>
+                  <input type="text" class="form-control" id="namee" required>
+              </div>
+              <div class="mb-3">
+                  <label for="emaill" class="form-label">بريد إلكتروني:</label>
+                  <input type="email" class="form-control" id="emaill" required>
+              </div>
+              <div class="mb-3">
+                  <label for="phonee" class="form-label">هاتف:</label>
+                  <input type="tel" class="form-control" id="phonee" required>
+              </div>
+              <div class="mb-3">
+                  <label for="datee" class="form-label">تاريخ:</label>
+                  <input type="date" class="form-control" id="datee" required>
+              </div>
+              <div class="mb-3">
+                  <label for="timee" class="form-label">وقت:</label>
+                  <input type="time" class="form-control" id="timee" required>
+              </div>
+              <div class="mb-3">
+                  <label for="peoplee" class="form-label">عدد الأشخاص:</label>
+                  <input type="number" class="form-control" id="peoplee" min="1" required>
+              </div>
+              <button type="submit" class="btn btn-primary">تأكيد الحجز</button>
+          </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+   <!-- pop up table booking end here        -->
+
+   <!-- Notification Message -->
+   <div id="confirmationMessage" class="mt-3"></div>
+   <div id="notification" class="alert alert-success d-none mt-3" role="alert">
+    تم الحجز بنجاح!
+   </div>
+</div>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container my-5 py-5">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="display-3 text-white animated slideInLeft">استمتع لدينا<br>وجبة لذيذة</h1>
+                            <p class="text-white animated slideInLeft mb-4 pb-2">انغمس في رحلة طهي مع أطباقنا اللذيذة المحضرة بخبرة باستخدام أجود المكونات. كل قضمة هي احتفال بالنكهات الهندية الأصيلة، وهي مثالية لإشباع رغباتك وإسعاد ذوقك. انضم إلينا لتجربة طعام لا تنسى!</p>
+                            <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">احجز طاولة</a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                            <img class="img-fluid" src="img/hero2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                                <h5>ماستر الطهاة</h5>
+                                <p>يجمع الطهاة الرئيسيون بين الخبرة الطهوية والإبداع والقيادة لصياغة أطباق استثنائية. إنهم يبتكرون قوائم الطعام، ويوجهون الموظفين، ويضمنون الجودة، ويعززون تجارب تناول الطعام، ويشكلون هوية مطاعمهم ونجاحها.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                                <h5>جودة الغذاء</h5>
+                                <p>يركز الطعام عالي الجودة على المكونات الطازجة والنكهات المتوازنة والعرض الجميل. إنها تعطي الأولوية للسلامة والاتساق والقيمة الغذائية والممارسات المستدامة، مما يضمن تجربة طعام لا تنسى ترضي العملاء وتسعدهم.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
+                                <h5>الطلب عبر الإنترنت</h5>
+                                <p>يعمل الطلب عبر الإنترنت على تبسيط تجربة تناول الطعام، مما يسمح للعملاء بتصفح القوائم بسهولة وتخصيص الطلبات والدفع رقميًا. إنه يعزز إمكانية الوصول، ويزيد من وصول المطاعم، ويدعم خدمات توصيل الطعام واستلامه بكفاءة.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                                <h5>خدمة 24/7</h5>
+                                <p>تضمن الخدمة المتوفرة على مدار الساعة طوال أيام الأسبوع إمكانية وصول العملاء إلى المنتجات أو الدعم في أي وقت، مما يعزز الراحة والرضا. فهو يبني الولاء، ويلبي الاحتياجات المتنوعة، ويستوعب جداول زمنية مختلفة، مما يعزز تجربة موثوقة وسريعة الاستجابة.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/bpic1.png">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/bpic3.png" style="margin-top: 25%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="img/about-3.jpg">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/about-4.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">معلومات عنا</h5>
+                        <h2 class="mb-4">مرحبا بكم في <i class="fa fa-utensils text-primary me-2"></i>زيكا الهندية</h2>
+                        <p class="mb-4">في Indian Zayka، نحتفل بالنكهات الغنية والثقافة النابضة بالحياة للمطبخ الهندي. يقوم طهاتنا بإعداد أطباق أصيلة باستخدام مكونات طازجة وعالية الجودة، ويمزجون بين التقاليد والابتكار. استمتع بأجواء دافئة وخدمة استثنائية، سواء تناول الطعام داخل المطعم أو الطلب عبر الإنترنت. انضم إلينا في رحلة طهي تُبهج الحواس!</p>
+                        <!-- <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p> -->
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15</h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Years of</p>
+                                        <h6 class="text-uppercase mb-0">خبرة</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">شائع</p>
+                                        <h6 class="text-uppercase mb-0">ماستر الطهاة</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary py-3 px-5 mt-2" href="">اقرأ المزيد</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Menu Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">قائمة الطعام</h5>
+                    <h1 class="mb-5">العناصر الأكثر شعبية</h1>
+                </div>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                                <i class="fa fa-coffee fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">شائع</small>
+                                    <h6 class="mt-n1 mb-0">إفطار</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                                <i class="fa fa-hamburger fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">خاص</small>
+                                    <h6 class="mt-n1 mb-0">يطلق</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                                <i class="fa fa-utensils fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">محبوب</small>
+                                    <h6 class="mt-n1 mb-0">عشاء</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/idli.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>إيدلي - 4بيس</span>
+                                                <span class="text-primary">Rs.60</span>
+                                            </h5>
+                                            <small class="fst-italic">كعك الأرز المطهو ​​على البخار يقدم مع صلصة جوز الهند والسامبار.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/dosa.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>دوسة</span>
+                                                <span class="text-primary">Rs.80</span>
+                                            </h5>
+                                            <small class="fst-italic">كريب الأرز والعدس المقرمش، غالبًا ما يكون محشوًا بالبطاطا المتبلة، ويقدم مع الصلصات والسامبار.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/aalu2.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>آلو باراثا - 2pis</span>
+                                                <span class="text-primary">Rs.110</span>
+                                            </h5>
+                                            <small class="fst-italic">خبز مسطح محشو بطاطا متبلة، يقدم مع زبادي ومخلل.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/chole.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>شولي بهاتور - 2pis</span>
+                                                <span class="text-primary">Rs. 160</span>
+                                            </h5>
+                                            <small class="fst-italic">حمص حار يقدم مع خبز مقلي رقيق</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/upma.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>أوبما</span>
+                                                <span class="text-primary">Rs. 60</span>
+                                            </h5>
+                                            <small class="fst-italic">عصيدة السميد اللذيذة المطبوخة مع الخضار والتوابل</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/poha.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>بوها</span>
+                                                <span class="text-primary">Rs. 70</span>
+                                            </h5>
+                                            <small class="fst-italic"> أرز مطهو مع الكركم وبذور الخردل والبازلاء ومزين بالفول السوداني والكزبرة.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/vada.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>فادا</span>
+                                                <span class="text-primary">Rs. 60</span>
+                                            </h5>
+                                            <small class="fst-italic">فطائر العدس تقدم مع الصلصة والسامبار.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/bread.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>اومليت الخبز</span>
+                                                <span class="text-primary">Rs. 59</span>
+                                            </h5>
+                                            <small class="fst-italic">طبق بسيط ولكنه شعبي، يتكون من عجة مطبوخة مع الخبز والتوابل والأعشاب.</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/thali.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>الخضار ثالي</span>
+                                                <span class="text-primary">Rs. 240</span>
+                                            </h5>
+                                            <small class="fst-italic">طبق يضم مجموعة متنوعة من الأطباق، بما في ذلك الأرز، والدال، والكاري، والبانير، والمخللات، والخبز.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/biryani.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>برياني دجاج</span>
+                                                <span class="text-primary">Rs. 220</span>
+                                            </h5>
+                                            <small class="fst-italic">طبق أرز عطري مطبوخ مع اللحم المتبل أو الدجاج بنكهة البهارات والأعشاب.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/panner.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>بانير زبدة ماسالا</span>
+                                                <span class="text-primary">Rs. 200</span>
+                                            </h5>
+                                            <small class="fst-italic">كاري كريمي بالطماطم مع بانير (جبن قريش هندي).</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/chicken.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>دجاج تكا ماسالا</span>
+                                                <span class="text-primary">Rs. 230</span>
+                                            </h5>
+                                            <small class="fst-italic">قطع الدجاج المشوية في صلصة الطماطم الغنية والمتبلة</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/dalmakhni.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>دال ماخاني</span>
+                                                <span class="text-primary">Rs. 180</span>
+                                            </h5>
+                                            <small class="fst-italic">عدس أسود مطبوخ ببطء في صلصة زبدانية، وغالبا ما يقدم مع الأرز أو خبز النان.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/korma.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>كورما الخضار</span>
+                                                <span class="text-primary">Rs. 140</span>
+                                            </h5>
+                                            <small class="fst-italic">خضروات مشكلة مطبوخة في مرق جوز الهند والزبادي</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/naan.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>نان/روتي</span>
+                                                <span class="text-primary">Rs. 35</span>
+                                            </h5>
+                                            <small class="fst-italic">أنواع مختلفة من الخبز المصاحب للكاري، بما في ذلك نان الثوم وروتي القمح الكامل</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/gobi.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>ألو جوبي</span>
+                                                <span class="text-primary">Rs. 160</span>
+                                            </h5>
+                                            <small class="fst-italic">طبق متبل من البطاطس والقرنبيط، غالبًا ما يقدم كطبق جانبي</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/butter-chicken.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>دجاج بالزبدة</span>
+                                                <span class="text-primary">Rs. 240</span>
+                                            </h5>
+                                            <small class="fst-italic">دجاج طري في صلصة الطماطم الكريمية</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/palak-panner.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>بالاك بانير</span>
+                                                <span class="text-primary">Rs. 180</span>
+                                            </h5>
+                                            <small class="fst-italic">بانير في زبدة غنية ومرق الطماطم</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/chole1.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>شانا ماسالا</span>
+                                                <span class="text-primary">Rs. 170</span>
+                                            </h5>
+                                            <small class="fst-italic">حمص متبل مطبوخ مع البصل والطماطم </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/dalmakhni.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>دال ماخاني</span>
+                                                <span class="text-primary">Rs. 149</span>
+                                            </h5>
+                                            <small class="fst-italic">عدس أسود كريمي مطبوخ ببطء مع البهارات</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/paratha.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>باراثا</span>
+                                                <span class="text-primary">Rs. 30</span>
+                                            </h5>
+                                            <small class="fst-italic">خبز مسطح ذو طبقات (سادي أو محشو).</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/Pannerbiryani.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>بانير برياني</span>
+                                                <span class="text-primary">Rs. 189</span>
+                                            </h5>
+                                            <small class="fst-italic">أرز بسمتي عطري مطبوخ مع بانر متبل أو خضار.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/jeera.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>جيرا رايس</span>
+                                                <span class="text-primary">Rs. 169</span>
+                                            </h5>
+                                            <small class="fst-italic">أرز بسمتي مطهو مع بذور الكمون</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/pulao.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>بولاو</span>
+                                                <span class="text-primary">Rs. 139</span>
+                                            </h5>
+                                            <small class="fst-italic">أرز مطبوخ مع الخضار المشكلة والبهارات</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu End -->
+
+
+        <!-- Reservation Start -->
+        <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <div class="video">
+                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 bg-dark d-flex align-items-center">
+                    <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">حجز</h5>
+                        <h1 class="text-white mb-4">احجز طاولة عبر الإنترنت</h1>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">البريد الإلكتروني الخاص بك</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating date" id="date3" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
+                                        <label for="datetime">التاريخ والوقت</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="select1">
+                                          <option value="1">الناس 1</option>
+                                          <option value="2">الناس 2</option>
+                                          <option value="3">الناس 3</option>
+                                        </select>
+                                        <label for="select1">لا من الناس</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Special Request" id="message" style="height: 100px"></textarea>
+                                        <label for="message">طلب خاص</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">احجز الآن</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">يوتيوب فيديو</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always" allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Reservation Start -->
+
+
+        <!-- Team Start -->
+        <div class="container-xxl pt-5 pb-3">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">أعضاء الفريق</h5>
+                    <h1 class="mb-5">كبار الطهاة لدينا</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/chef1.png" alt="">
+                            </div>
+                            <h5 class="mb-0">سانجاي ثوما</h5>
+                            <small>الشيف</small>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/chef2.png" alt="">
+                            </div>
+                            <h5 class="mb-0">بانكاج بهادوريا</h5>
+                            <small>الشيف</small>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/chef3 singh.png" alt="">
+                            </div>
+                            <h5 class="mb-0">هارجيوت سينغ</h5>
+                            <small>الشيف</small>
+                             
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="img/chef4.png" alt="">
+                            </div>
+                            <h5 class="mb-0">بهخي</h5>
+                            <small>الشيف النيبالي</small>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="text-center">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">شهادة</h5>
+                    <h1 class="mb-5">يقول عملاؤنا!!!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>هل يمكنك توضيح المعلومات التي تبحث عنها بخصوص العميل؟ هل تسأل كيف تكتب عن عميل معين أم تبحث عن مثال؟ اسمحوا لي أن أعرف ما تحتاجه، وسيكون من دواعي سروري تقديم المساعدة!</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">اسم العميل</h5>
+                                <small>مهنة</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>هل يمكنك توضيح المعلومات التي تبحث عنها بخصوص العميل؟ هل تسأل كيف تكتب عن عميل معين أم تبحث عن مثال؟ اسمحوا لي أن أعرف ما تحتاجه، وسيكون من دواعي سروري تقديم المساعدة!</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">اسم العميل</h5>
+                                <small>مهنة</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>هل يمكنك توضيح المعلومات التي تبحث عنها بخصوص العميل؟ هل تسأل كيف تكتب عن عميل معين أم تبحث عن مثال؟ اسمحوا لي أن أعرف ما تحتاجه، وسيكون من دواعي سروري تقديم المساعدة!</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">اسم العميل</h5>
+                                <small>مهنة</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>هل يمكنك توضيح المعلومات التي تبحث عنها بخصوص العميل؟ هل تسأل كيف تكتب عن عميل معين أم تبحث عن مثال؟ اسمحوا لي أن أعرف ما تحتاجه، وسيكون من دواعي سروري تقديم المساعدة!</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">اسم العميل</h5>
+                                <small>مهنة</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">شركة</h4>
+                        <a class="btn btn-link" href="">معلومات عنا</a>
+                        <a class="btn btn-link" href="">اتصل بنا</a>
+                        <a class="btn btn-link" href="">حجز</a>
+                        <a class="btn btn-link" href="">سياسة الخصوصية</a>
+                        <a class="btn btn-link" href="">الشروط والأحكام</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">اتصال</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>كوندابور، حيدر أباد، الهند</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>indianzaykafood@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">افتتاح</h4>
+                        <h5 class="text-light fw-normal">الاثنين - السبت</h5>
+                        <p>11AM - 11PM</p>
+                        <h5 class="text-light fw-normal">الأحد</h5>
+                        <p>02PM - 12PM</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">النشرة الإخبارية</h4>
+                        <p>ابق على اطلاع دائم بنشرتنا الإخبارية للحصول على الوصفات الحصرية ونصائح الطبخ والعروض الترويجية للأطعمة اللذيذة!</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">اشتراك</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">ابتكارات الأيروبايت </a>, جميع الحقوق محفوظة.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">بيت</a>
+                                <a href="">ملفات تعريف الارتباط</a>
+                                <a href="">يساعد</a>
+                                <a href="">أسئلة وأجوبة الجودة</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

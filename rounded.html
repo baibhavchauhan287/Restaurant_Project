@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1;
+    width: 100%; /* Match the width of the toggle */
+}
+
+.dropdown-item {
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1; /* Highlight on hover */
+}
+
+.img1 {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
+  </style>
+</head>
+<body>
+    <div class="custom-dropdown">
+        <div class="dropdown-toggle" onclick="toggleDropdown()">
+            <img src="/img/usa.jpg" class="img1" alt="USA"> <span id="selectedLanguage">USA</span>
+        </div>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <div class="dropdown-item" onclick="changeDirection('en')">
+                <img src="/img/usa.jpg" class="img1" alt="USA"> USA
+            </div>
+            <div class="dropdown-item" onclick="changeDirection('ar')">
+                <img src="/img/saudi.JPG" class="img1" alt="Arabic"> عربي
+            </div>
+        </div>
+    </div>
+     <script>
+        function toggleDropdown() {
+    const dropdownMenu = document.getElementById('dropdownMenu');
+    dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+}
+
+function changeDirection(language) {
+    const body = document.body; // or use a specific container
+    const selectedLanguage = document.getElementById('selectedLanguage');
+
+    if (language === "en") {
+        body.style.fontFamily = "'SourceSansPro-Regular', sans-serif";
+        selectedLanguage.innerText = "USA"; // Update the displayed text
+    } else if (language === "ar") {
+        body.style.fontFamily = "'Arial', sans-serif"; // or another font for Arabic
+        selectedLanguage.innerText = "عربي"; // Update the displayed text
+    }
+
+    // Close the dropdown after selection
+    document.getElementById('dropdownMenu').style.display = 'none';
+}
+
+let currentLanguage = 'en'; // Default language
+
+function toggleLanguage() {
+    const flagIcon = document.getElementById('flagIcon');
+    const languageLabel = document.getElementById('languageLabel');
+
+    if (currentLanguage === 'en') {
+        // Switch to Arabic
+        currentLanguage = 'ar';
+        flagIcon.src = '/img/saudi.JPG'; // Update the flag icon
+        languageLabel.textContent = 'عربي'; // Update the label text
+        document.body.style.fontFamily = 'inherit'; // Apply Arabic font
+
+        // Redirect to Arabic page
+        window.location.href = 'arabic.html'; // Update this to the correct Arabic page URL
+    } else {
+        // Switch to English
+        currentLanguage = 'en';
+        flagIcon.src = '/img/usa.jpg'; // Update the flag icon
+        languageLabel.textContent = 'English'; // Update the label text
+        document.body.style.fontFamily = 'SourceSansPro-Regular'; // Apply English font
+
+        // Redirect to USA page
+        window.location.href = 'usa.html'; // Update this to the correct English page URL
+    }
+}
+
+
+     </script>
+</body>
+</html>

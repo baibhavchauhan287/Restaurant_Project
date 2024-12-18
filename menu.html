@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Indian Zayka Restaurant</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        #languageSwitcher{
+    margin-left:10px;
+}
+.drop-down{
+    margin-right:10px;
+}
+.lang1{
+        height: 40px !important;
+        width: 80px;
+        background-color: #feb445;
+        border-color: #feaa2d;
+        color: #FFFFFF;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+              <h1 class="text-primary m-0" data-translate="indanh1"><i class="fa fa-utensils me-3" id="heading"></i>INDIAN ZAYKA</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link active" data-translate="home">Home</a>
+                        <a href="about.html" class="nav-item nav-link" data-translate="about1">About</a>
+                        <a href="service.html" class="nav-item nav-link" data-translate="service1">Service</a>
+                        <a href="menu.html" class="nav-item nav-link" data-translate="menu1">Menu</a>
+                        <div class="nav-item dropdown">
+             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-translate="page1">Pages</a>
+                            <div class="dropdown-menu m-0">
+                        <a href="booking.html" class="dropdown-item" data-translate="book1" >Booking</a>
+                      <a href="team.html" class="dropdown-item" data-translate="our1">Our Team</a>
+                         <a href="testimonial.html" class="dropdown-item" data-translate="test1">Testimonial</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link" data-translate="contact1">Contact</a>
+                        </div>
+                            <!-- Language switcher -->
+
+                            <select id="languageSwitcher" class="drop-down btn-2 lang1" onchange="changeDirection(this.value)"
+                            class="nav-item nav-link ">
+                                <option value="en"><span><img  src="./img/usa.jpg" class="img1"  alt="USA"></span>USA</option>
+                                <option value="ar"><img src="./img/saudi.JPG" class="img1" alt="Arabic">عربي</option>
+                            </select>
+
+                    
+                    <!-- pop up here for booking form -->
+                  <a href="" class="btn btn-primary py-2 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal" data-translate="book2">Book A Table</a> 
+                      
+                  <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" data-translate="table1">Table Booking here</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      <div class="modal-body">
+          <form id="bookingForm">
+              <div class="mb-3">
+                  <label for="namee" class="form-label" data-translate="name1">Name:</label>
+                  <input type="text" class="form-control" id="namee" required>
+              </div>
+              <div class="mb-3">
+                  <label for="emaill" class="form-label" data-translate="mail">Email:</label>
+                  <input type="email" class="form-control" id="emaill" required>
+              </div>
+              <div class="mb-3">
+                  <label for="phonee" class="form-label" data-translate="
+                  phone1">Phone:</label>
+                  <input type="tel" class="form-control" id="phonee" required>
+              </div>
+              <div class="mb-3">
+                  <label for="datee" class="form-label" data-translate="date1">Date:</label>
+                  <input type="date" class="form-control" id="datee" required>
+              </div>
+              <div class="mb-3">
+                  <label for="timee" class="form-label" data-translate="time">Time:</label>
+                  <input type="time" class="form-control" id="timee" required>
+              </div>
+              <div class="mb-3">
+                  <label for="peoplee" class="form-label">Number of People:</label>
+                  <input type="number" class="form-control" id="peoplee" min="1" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Confirm Booking</button>
+          </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+   <!-- pop up table booking end here        -->
+
+   <!-- Notification Message -->
+   <div id="confirmationMessage" class="mt-3"></div>
+   <div id="notification" class="alert alert-success d-none mt-3" role="alert">
+       Booking successfully done!
+   </div>
+</div>
+                </div>
+            </nav>
+
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown" data-translate="food-m">Food Menu</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="#" data-translate="home-m">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#" data-translate="page-m">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page" data-translate="menu-m">Menu</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Menu Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal" data-translate="food-m">Food Menu</h5>
+                    <h1 class="mb-5" data-translate="most-pop">Most Popular Items</h1>
+                </div>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                                <i class="fa fa-coffee fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body" data-translate="popl">Popular</small>
+                                    <h6 class="mt-n1 mb-0" data-translate="break">Breakfast</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                                <i class="fa fa-hamburger fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body" data-translate="Special-m">Special</small>
+                                    <h6 class="mt-n1 mb-0" data-translate="laun">Launch</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                                <i class="fa fa-utensils fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body" data-translate="love">Lovely</small>
+                                    <h6 class="mt-n1 mb-0" data-translate="dinn">Dinner</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/idli.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="idli-m">Idli - 4pis</span>
+                                                <span class="text-primary">Rs.60</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="idli-a">Steamed rice cakes served with coconut chutney and sambar.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/dosa.png" alt=""style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="dosa-m">Dosa</span>
+                                                <span class="text-primary">Rs.80</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="dosa-a">Crispy rice and lentil crepes, often filled with spiced potatoes, served with chutneys and sambar.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/aalu2.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="aalu-m">Aalu Paratha - 2pis</span>
+                                                <span class="text-primary">Rs.110</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="aalu-a">Stuffed flatbread with spiced potatoes, served with yogurt and pickles.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/chole.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="chole-m">Chole Bhature - 2pis</span>
+                                                <span class="text-primary">Rs. 160</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="chole-a">Spicy chickpeas served with fluffy fried bread</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/upma.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="upma-m">Upma</span>
+                                                <span class="text-primary">Rs. 60</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="upma-a">Savory semolina porridge cooked with vegetables and spices</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/poha.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="poha-m">Poha</span>
+                                                <span class="text-primary">Rs. 70</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="poha-a"> Flattened rice cooked with turmeric, mustard seeds, and peas, garnished with peanuts and coriander.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                             <div class="d-flex align-items-center">
+                             <img class="flex-shrink-0 img-fluid rounded" src="./img/vada.png" alt="" style="width: 90px;">
+                             <div class="w-100 d-flex flex-column text-start ps-4">
+                             <h5 class="d-flex justify-content-between border-bottom pb-2">
+                             <span data-translate="vada-m">Vada</span>
+                            <span class="text-primary">Rs. 60</span>
+                            </h5>
+                       <small class="fst-italic" data-translate="vada-a">Lentil fritters served with chutney and sambar.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/bread.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="bread-m">Bread Omelette</span>
+                                                <span class="text-primary">Rs. 59</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="bread-a">A simple yet popular dish, featuring an omelet cooked with bread, spices, and herbs.</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/thali.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="veg">Veg Thali</span>
+                                                <span class="text-primary">Rs. 240</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="plates">A platter featuring a variety of dishes, including rice, dal, curries,panner, pickles, and bread.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/biryani.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="Chiken">Chicken Biryani</span>
+                                                <span class="text-primary">Rs. 220</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="aromatic">Aromatic rice dish cooked with marinated meat or Chicken, flavored with spices and herbs.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/panner.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="Paneer">Paneer Butter Masala</span>
+                                                <span class="text-primary">Rs. 200</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="Creamy"> Creamy tomato-based curry with paneer (Indian cottage cheese).</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/chicken.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="Chiken-2">Chicken Tikka Masala</span>
+                                                <span class="text-primary">Rs. 230</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="Grilled">Grilled chicken pieces in a rich, spiced tomato sauce</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/dalmakhni.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="dal makhani">Dal Makhani</span>
+                                                <span class="text-primary">Rs. 180</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="slow-cooked">Slow-cooked black lentils in a buttery sauce, often served with rice or naan.</small>
+                                        </div>
+                                    </div>
+                                </div>        
+
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/gobi.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="aloo">Aloo Gobi</span>
+                                                <span class="text-primary">Rs. 160</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="spiced">Spiced potato and cauliflower dish, often served as a side</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/butter-chicken.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="Butt">Butter Chicken</span>
+                                                <span class="text-primary">Rs. 240</span>
+                                            </h5>
+                                            <small class="fst-italic">Tender chicken in a creamy tomato sauce</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/palak-panner.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="Palak">Palak Paneer</span>
+                                                <span class="text-primary">Rs. 180</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="Paneer1">Paneer in a rich butter and tomato gravy</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/chole1.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="Chana">Chana Masala</span>
+                                                <span class="text-primary">Rs. 170</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="Spiced">Spiced chickpeas cooked with onions and tomatoes </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/dalmakhni.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="Dal">Dal Makhani</span>
+                                                <span class="text-primary">Rs. 149</span>
+                                            </h5>
+                                            <small class="fst-italic">Creamy black lentils slow-cooked with spices</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/paratha.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="Para">Paratha</span>
+                                                <span class="text-primary">Rs. 30</span>
+                                            </h5>
+                                            <small class="fst-italic"> Flaky, layered flatbread (plain or stuffed).</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/Pannerbiryani.png" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="Paneer-B">Panner Biryani</span>
+                                                <span class="text-primary">Rs. 189</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="Aro">Aromatic basmati rice cooked with marinated Panner or vegetables.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/jeera.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="jeera">Jeera Rice</span>
+                                                <span class="text-primary">Rs. 169</span>
+                                            </h5>
+                                            <small class="fst-italic" data-translate="Basmati">Basmati rice tempered with cumin seeds</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/pulao.png" alt="" style="width: 90px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span data-translate="Pula">Pulao</span>
+                                                <span class="text-primary">Rs. 139</span>
+                                            </h5>
+                                            <small class="fst-italic"  data-translate="Rice">Rice cooked with mixed vegetables and spices</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4" data-translate="comp">Company</h4>
+                        <a class="btn btn-link" href="" data-translate="about-f">About Us</a>
+                        <a class="btn btn-link" href="" data-translate="con-f">Contact Us</a>
+                        <a class="btn btn-link" href="" data-translate="Reservation-f">Reservation</a>
+                        <a class="btn btn-link" href="" data-translate="pri-f">Privacy Policy</a>
+                        <a class="btn btn-link" href="" data-translate="term">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4" data-translate="cont-f">Contact</h4>
+                        <p class="mb-2" data-translate="konda"><i class="fa fa-map-marker-alt me-3"></i>Kondapur, Hyderabad, India</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>indianzaykafood@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4" data-translate="open">Opening</h4>
+                        <h5 class="text-light fw-normal" data-translate="mon-sat">Monday - Saturday</h5>
+                        <p>11AM - 11PM</p>
+                        <h5 class="text-light fw-normal" data-translate="sun">Sunday</h5>
+                        <p>02PM - 12PM</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4" data-translate="news">Newsletter</h4>
+                        <p data-translate="stay-f">Stay updated with our newsletter for exclusive recipes, Cooking tips, and delicious Foods promotions!</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2" data-translate="sign">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#" data-translate="aero">Aerobyte Innovations </a>, <span data-translate="all-f">All Right Reserved.</span> 
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="" data-translate="home-f">Home</a>
+                                <a href="" data-translate="cook-f">Cookies</a>
+                                <a href="" data-translate="help-f">Help</a>
+                                <a href="" data-translate="fqa">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <script>
+                async function loadTranslations() {
+                    try {
+                        const response = await fetch('translate.json');
+                        if (!response.ok) {
+                            throw new Error('Failed to load translations'); // Handle fetch errors
+                        }
+                        return await response.json();
+                    } catch (error) {
+                        console.error('Error loading translations:', error);
+                        return {}; // Return empty object if there's an error
+                    }
+                }
+                
+                async function updateLanguage(language) {
+                    try {
+                        const translations = await loadTranslations();
+                        // Find all elements with a data-translate attribute
+                        document.querySelectorAll('[data-translate]').forEach(element => {
+                            const key = element.getAttribute('data-translate');
+                            if (translations[key] && translations[key][language]) {
+                                element.innerText = translations[key][language];
+                            } else {
+                                element.innerText = '[Translation Missing]'; // Fallback if translation is missing
+                            }
+                        });
+                    } catch (error) {
+                        console.error('Error updating language:', error); // Catch any other errors
+                    }
+                }
+                // Ensure the DOM is loaded before attaching event listeners
+                document.addEventListener('DOMContentLoaded', function() {
+                        // Event listener for the language switcher
+                        const languageSwitcher = document.getElementById('languageSwitcher');
+                        if (languageSwitcher) {
+                            languageSwitcher.addEventListener('change', function() {
+                                const selectedLanguage = this.value;
+                                updateLanguage(selectedLanguage);
+                            });
+                
+                            // Default language set to English on page load
+                            updateLanguage('en');
+                        } else {
+                            console.error('Language switcher element not found');
+                        }
+                    });
+                
+                </script>
+
+                <script>
+        function changeDirection(language) {
+          // Change the text direction based on the selected language
+          if (language === 'ar') {
+            document.body.style.direction = 'rtl';
+            document.body.style.fontfamily="'cario,sans-sarif'" ; // Right-to-left for Arabic
+          } else {
+            document.body.style.direction = 'ltr'; 
+            document.body.style.fontfamily="'cario,sans-sarif'" ; // Right-to-left for Arabic
+        
+ // Left-to-right for English or other languages
+          }
+        }
+      </script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

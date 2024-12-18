@@ -1,0 +1,699 @@
+{
+
+    "loading":{
+        "en": "Loading...",
+        "ar": "تحميل..."
+    },
+    "indanh1":{
+        "en": "INDIAN ZAYKA",
+        "ar": "زيكا الهندية"
+    },
+
+    "home":{
+        "en": "Home",
+        "ar": "بيت"
+    },
+    "about1":{
+        "en": "About",
+        "ar": "عن"
+    },
+    "service1":{
+        "en": "Service",
+        "ar": "خدمة"
+    },
+    "menu1":{
+        "en": "Menu",
+        "ar": "قائمة طعام"
+    },
+    "Reservation":{
+        "en":"Reservation",
+        "ar":"حجز"
+    },
+    "Book":{
+        "en":"Book A Table Online",
+        "ar":"احجز طاولة عبر الإنترنت"
+    },
+    "Name":{
+        "en":"Your Name",
+        "ar":"اسم"
+    },
+    "Email":{
+        "en":"Your Email",
+        "ar":"البريد الإلكتروني الخاص بك"
+    },
+    "Date":{
+        "en":"Date & Time",
+        "ar":"البريد الإلكتروني الخاص بك"
+    },
+    "time":{
+        "en":"Time",
+         "ar":"وقت"
+    },
+    
+    "people1":{
+        "en":"People1",
+        "ar":"الناس"
+    },
+    "people2":{
+        "en":"People2",
+        "ar":"الناس"
+    },
+    
+    "people3":{
+        "en":"People3",
+        "ar":"الناس"
+    },
+    "no1":{
+        "en":"No Of People",
+        "ar":"لا من الناس"
+    },
+    "spec":{
+        "en":"Special Request",
+        "ar":"طلب خاص"
+    },
+    "now1":{
+        "en":"Book Now",
+        "ar":"احجز الآن"
+    },
+    "page1":{
+        "en": "Pages",
+        "ar": "الصفحات"
+    },
+    "book1":{
+        "en": "Booking",
+        "ar": "الحجز"
+    },
+    "our1":{
+        "en": "Our Team",
+        "ar": "فريقنا"
+    },
+    "test1":{
+        "en": "Testimonial",
+        "ar": "شهادة"
+    },
+    "contact1":{
+        "en": "Contact",
+        "ar": "اتصال"
+    },
+    "book2":{
+        "en": "Book A Table",
+        "ar": "احجز طاولة"
+    },
+
+
+    "table1":{
+        "en": "Table Booking here",
+        "ar": "حجز الطاولة هنا"
+    },
+
+    "name1":{
+        "en": "Name:",
+        "ar": "اسم:"
+    },
+    "mail":{
+        "en": "Email:",
+        "ar": "بريد إلكتروني:"
+    },
+    "phone1":{
+        "en": "Phone:",
+        "ar": "هاتف:"
+    },
+    "date1":{
+        "en": "Date:",
+        "ar": "تاريخ:"
+    },
+
+    "enjoy":{
+        "en": "Enjoy Our",
+        "ar": "استمتع لدينا"
+    },
+
+    "meal":{
+        "en": "Delicious Meal",
+        "ar": "وجبة لذيذة"
+    },
+    "book3":{
+        "en": "Book A Table",
+        "ar": "احجز طاولة"
+    },
+    "nepali":{
+        "en":"Nepali Chef",
+        "ar":"الشيف النيبالي"
+    },
+
+    "mast":{
+        "en": "Master Chefs",
+        "ar": "ماستر الطهاة"
+    },
+    "mast-p":{
+        "en": "Master chefs combine culinary expertise, creativity, and leadership to craft exceptional dishes. They innovate menus, mentor staff, ensure quality, and enhance dining experiences, shaping the identity and success of their restaurants.",
+        "ar": "يجمع الطهاة الرئيسيون بين الخبرة الطهوية والإبداع والقيادة لصياغة أطباق استثنائية. إنهم يبتكرون قوائم الطعام، ويوجهون الموظفين، ويضمنون الجودة، ويعززون تجارب تناول الطعام، ويشكلون هوية مطاعمهم ونجاحها."
+    },
+    "quali":{
+        "en": "Quality Food",
+        "ar": "جودة الغذاء"
+    },
+
+    "quali-p":{
+        "en": "Quality food emphasizes fresh ingredients, balanced flavors, and beautiful presentation. It prioritizes safety, consistency, nutritional value, and sustainable practices, ensuring a memorable dining experience that satisfies and delights customers.",
+        "ar": "يركز الطعام عالي الجودة على المكونات الطازجة والنكهات المتوازنة والعرض الجميل. إنها تعطي الأولوية للسلامة والاتساق والقيمة الغذائية والممارسات المستدامة، مما يضمن تجربة طعام لا تنسى ترضي العملاء وتسعدهم."
+    },
+    "onlin":{
+        "en": "Online Order",
+        "ar": "الطلب عبر الإنترنت"
+    },
+    "onlin-p":{
+        "en": "Online ordering streamlines the dining experience, allowing customers to conveniently browse menus, customize orders, and pay digitally. It enhances accessibility, increases restaurant reach, and supports efficient food delivery and pickup services.",
+        "ar": "يعمل الطلب عبر الإنترنت على تبسيط تجربة تناول الطعام، مما يسمح للعملاء بتصفح القوائم بسهولة وتخصيص الطلبات والدفع رقميًا. إنه يعزز إمكانية الوصول، ويزيد من وصول المطاعم، ويدعم خدمات توصيل الطعام واستلامه بكفاءة."
+    },
+    "ser":{
+        "en": "24/7 Service",
+        "ar": "خدمة 24/7"
+    },
+    "ser-p":{
+        "en": "24/7 service ensures customers can access products or support anytime, enhancing convenience and satisfaction. It builds loyalty, meets diverse needs, and accommodates different schedules, fostering a reliable and responsive experience.",
+        "ar": "تضمن الخدمة المتوفرة على مدار الساعة طوال أيام الأسبوع إمكانية وصول العملاء إلى المنتجات أو الدعم في أي وقت، مما يعزز الراحة والرضا. فهو يبني الولاء، ويلبي الاحتياجات المتنوعة، ويستوعب جداول زمنية مختلفة، مما يعزز تجربة موثوقة وسريعة الاستجابة."
+    },
+
+    "p1":{
+        "en": "Indulge in a culinary journey with our flavorful dishes, expertly crafted using the finest ingredients. Each bite is a celebration of authentic Indian flavors, perfect for satisfying your cravings and delighting your taste buds. Join us for a memorable dining experience!",
+        "ar": "انغمس في رحلة طهي مع أطباقنا اللذيذة المحضرة بخبرة باستخدام أجود المكونات. كل قضمة هي احتفال بالنكهات الهندية الأصيلة، وهي مثالية لإشباع رغباتك وإسعاد ذوقك. انضم إلينا لتجربة طعام لا تنسى!"
+    },
+
+    "about2":{
+        "en": "About Us",
+        "ar": "معلومات عنا"
+    },
+    "wel":{
+        "en": "Welcome to",
+        "ar": "مرحبا بكم في"
+    },
+    "india-a":{
+        "en": "INDIAN ZAYKA",
+        "ar": "زيكا الهندية"
+    },
+    "about-india":{
+        "en": "At Indian Zayka, we celebrate the rich flavors and vibrant culture of Indian cuisine. Our chefs craft authentic dishes using fresh, high-quality ingredients, blending tradition with innovation. Experience a warm atmosphere and exceptional service, whether dining in or ordering online. Join us on a culinary journey that delights the senses!",
+        "ar": "في Indian Zayka، نحتفل بالنكهات الغنية والثقافة النابضة بالحياة للمطبخ الهندي. يقوم طهاتنا بإعداد أطباق أصيلة باستخدام مكونات طازجة وعالية الجودة، ويمزجون بين التقاليد والابتكار. استمتع بأجواء دافئة وخدمة استثنائية، سواء تناول الطعام داخل المطعم أو الطلب عبر الإنترنت. انضم إلينا في رحلة طهي تُبهج الحواس!"
+    },
+    "year":{
+        "en": "Years of",
+        "ar": "سنوات من"
+    },
+    "exper":{
+        "en": "Experience",
+        "ar": "خبرة"
+    },
+    "popul":{
+        "en": "Popular",
+        "ar": "شائع"
+    },
+    "read-m":{
+        "en": "Read More",
+        "ar": "اقرأ المزيد"
+    },
+    "mast-c":{
+        "en": "Master Chefs",
+        "ar": "ماستر الطهاة"
+    },
+    "food-m":{
+        "en": "Food Menu",
+        "ar": "قائمة الطعام"
+    },
+    "most-pop":{
+        "en": "Most Popular Items",
+        "ar": "العناصر الأكثر شعبية"
+    },
+    "popl":{
+        "en": "Popular",
+        "ar": "شائع"
+    },
+    "break":{
+        "en": "Breakfast",
+        "ar": "إفطار"
+    },
+    "Special-m":{
+        "en": "Special",
+        "ar": "خاص"
+    },
+    "laun":{
+        "en": "Launch",
+        "ar": "يطلق"
+    },
+    "love":{
+        "en": "Lovely",
+        "ar": "محبوب"
+    },
+    "dinn":{
+        "en": "Dinner",
+        "ar": "عشاء"
+    },
+    "idli-m":{
+        "en": "Idli - 4pis",
+        "ar": "ادلي - 4بيس"
+    },
+    "idli-a":{
+        "en": "Steamed rice cakes served with coconut chutney and sambar.",
+        "ar": "كعك الأرز المطهو ​​على البخار يقدم مع صلصة جوز الهند والسامبار."
+    },
+    "dosa-m":{
+        "en": "Dosa",
+        "ar": "محبوب"
+    },
+    "dosa-a":{
+        "en": "Crispy rice and lentil crepes, often filled with spiced potatoes, served with chutneys and sambar.",
+        "ar": "كريب الأرز والعدس المقرمش، غالبًا ما يكون محشوًا بالبطاطا المتبلة، ويقدم مع الصلصات والسامبار."
+    },
+    "aalu-m":{
+        "en": "Aalu Paratha - 2pis",
+        "ar": "آلو باراثا - 2pis"
+    },
+    "aalu-a":{
+        "en": "Stuffed flatbread with spiced potatoes, served with yogurt and pickles.",
+        "ar": "خبز مسطح محشو بطاطا متبلة، يقدم مع زبادي ومخلل."
+    },
+    "chole-m":{
+        "en": "Chole Bhature - 2pis",
+        "ar": "شولي بهاتور - 2pis"
+    },
+    "chole-a":{
+        "en": "Spicy chickpeas served with fluffy fried bread",
+        "ar": "حمص حار يقدم مع خبز مقلي رقيق"
+    },
+    "upma-m":{
+        "en": "Upma",
+        "ar": "أوبما"
+    },
+    "upma-a":{
+        "en": "Savory semolina porridge cooked with vegetables and spices",
+        "ar": "عصيدة السميد اللذيذة المطبوخة مع الخضار والتوابل"
+    },
+    "poha-m":{
+        "en": "Poha",
+        "ar": "بوها"
+    },
+    "poha-a":{
+        "en": "Flattened rice cooked with turmeric, mustard seeds, and peas, garnished with peanuts and coriander.",
+        "ar": "أرز مطهو مع الكركم، وبذور الخردل، والبازلاء، ومزين بالفول السوداني والكزبرة."
+    },
+    "vada-m":{
+        "en": "Vada",
+        "ar": "فادا"
+    },
+    "vada-a":{
+        "en": "Lentil fritters served with chutney and sambar.",
+        "ar": "فطائر العدس تقدم مع الصلصة والسامبار."
+    },
+    "bread-m":{
+        "en": "Bread Omelette",
+        "ar": "اومليت الخبز"
+    },
+    "bread-a":{
+        "en": "A simple yet popular dish, featuring an omelet cooked with bread, spices, and herbs.",
+        "ar": "طبق بسيط ولكنه شعبي، يتكون من عجة مطبوخة مع الخبز والتوابل والأعشاب."
+    },
+    "team1":{
+        "en": "Team Members",
+        "ar": "أعضاء الفريق"
+    },
+    "our2":{
+        "en": "Our Master Chefs",
+        "ar": "كبار الطهاة لدينا"
+    },
+    "sanjay":{
+        "en": "Sanjay Thumma",
+        "ar": "سانجاي ثوما"
+    },
+    "chef-1":{
+        "en": "Chef",
+        "ar": "الشيف"
+    },
+    "pankaj":{
+        "en": "Pankaj Bhadouria",
+        "ar": "بانكاج بهادوريا"
+    },
+    "chef-2":{
+        "en": "Chef",
+        "ar": "الشيف"
+    },
+    "harjoyt":{
+        "en": "Harjyot Singh",
+        "ar": "هارجيوت سينغ"
+    },
+    "chef-3":{
+        "en": "Chef",
+        "ar": "الشيف"
+    },
+    "chef-4":{
+        "en": "Chef",
+        "ar": "الشيف"
+    },
+    "Bhikhi1":{
+        "en": "Bhikhi",
+        "ar": "بهخي"
+    },
+    "our-client":{
+        "en": "Our Clients Say!!!",
+        "ar": "يقول عملاؤنا!!!"
+    },
+    "Client-p1":{
+        "en": "Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam",
+        "ar": "بهخي"
+    },
+    "testim":{
+        "en": "Testimonial",
+        "ar": "شهادة"
+    },
+    "comp":{
+        "en": "Company",
+        "ar": "شركة"
+    },
+
+    "about-f":{
+        "en": "About Us",
+        "ar": "معلومات عنا"
+    },
+    "con-f":{
+        "en": "Contact Us",
+        "ar": "اتصل بنا"
+    },
+    "pri-f":{
+        "en": "Privacy Policy",
+        "ar": "سياسة الخصوصية"
+    },
+    
+    "term":{
+        "en": "Terms & Condition",
+        "ar": "الشروط والأحكام"
+    },
+    "Reservation-f":{
+        "en": "Reservation",
+        "ar": "حجز"
+    },
+    "cont-f":{
+        "en": "Contact",
+        "ar": "اتصال"
+    },
+    "konda":{
+        "en": "Kondapur, Hyderabad, India",
+        "ar": "كوندابور، حيدر أباد، الهند"
+    },
+    "mon-sat":{
+        "en": "Monday - Saturday",
+        "ar": "كوندابور، حيدر أباد، الهند"
+    },
+    "sun":{
+        "en": "Sunday",
+        "ar": "الأحد"
+    },
+    "open":{
+        "en": "Opening",
+        "ar": "افتتاح"
+    },
+    "news":{
+        "en": "Newsletter",
+        "ar": "النشرة الإخبارية"
+    },
+    "stay-f":{
+        "en": "Stay updated with our newsletter for exclusive recipes, Cooking tips, and delicious Foods promotions!",
+        "ar": "ابق على اطلاع دائم بنشرتنا الإخبارية للحصول على الوصفات الحصرية ونصائح الطبخ والعروض الترويجية للأطعمة اللذيذة!"
+    },
+    "sign":{
+        "en": "SignUp",
+        "ar": "اشتراك"
+    },
+    "aero":{
+        "en": "Aerobyte Innovations",
+        "ar": "ابتكارات الأيروبايت"
+    },
+    "home-f":{
+        "en": "Home",
+        "ar": "بيت"
+    },
+    "cook-f":{
+        "en": "Cookies",
+        "ar": "ملفات تعريف الارتباط"
+    },
+    "help-f":{
+        "en": "Help",
+        "ar": "يساعد"
+    },
+    "fqa":{
+        "en": "FQAs",
+        "ar": "أسئلة وأجوبة الجودة"
+    },
+    "all-f":{
+        "en": "All Right Reserved.",
+        "ar": "جميع الحقوق محفوظة."
+    },
+    "home1":{
+        "en": "Home",
+        "ar": "بيت"
+    },
+    "page-ser":{
+        "en": "Pages",
+        "ar": "الصفحات"
+    },
+    "servi":{
+        "en": "Service",
+        "ar": "خدمة"
+    },
+    "our3":{
+        "en": "Our Services",
+        "ar": "خدماتنا"
+    },
+    "Food-m":{
+        "en": "Food Menu",
+        "ar": "قائمة الطعام"
+    },
+    "home-m":{
+        "en": "Home",
+        "ar": "بيت"
+    },
+
+    "page-m":{
+        "en": "Pages",
+        "ar": "الصفحات"
+    },
+    "menu-m":{
+        "en": "Menu",
+        "ar": "قائمة طعام"
+    },
+    "book-b":{
+        "en": "Booking",
+        "ar": "الحجز"
+    },
+    "our-4":{
+        "en": "Our Team",
+        "ar": "فريقنا"
+    },
+    "our-3":{
+        "en": "About Us",
+        "ar": "معلومات عنا"
+    },
+    "about-1":{
+        "en": "About",
+        "ar": "عن"
+    },
+    "Explore1":{
+        "en": "Explore Our Services",
+        "ar": "استكشف خدماتنا"
+    },
+    "Our Services":{
+        "en": "Our Services",
+        "ar": "خدماتنا"
+    },
+    "veg":{
+        "en":"Veg Thali",
+          "ar":  "ثالي الخضار"
+    },
+    "plates":{
+        "en":"A platter featuring a variety of dishes, including rice, dal, curries,panner, pickles, and bread",
+        "ar":"طبق يضم مجموعة متنوعة من الأطباق، بما في ذلك الأرز، والدال، والكاري، والبانير، والمخللات، والخبز"
+    },
+    "Chiken":{
+        "en":"Chiken Briyani",
+        "ar":"برياني دجاج"
+    },
+    "aromatic":{
+        "en":"Aromatic rice dish cooked with marinated meat or Chicken, flavored with spices and herbs",
+        "ar":"طبق أرز عطري مطبوخ مع اللحم المتبل أو الدجاج بنكهة البهارات والأعشاب"
+    },
+
+    "Paneer":{
+        "en":"Paneer Butter Masala",
+        "ar":"زبدة بانير ماسالا "
+    },
+    "Creamy":{
+        "en":" Creamy tomato-based curry with paneer (Indian cottage cheese).",
+        "ar":"كاري كريمي بالطماطم مع بانير (جبن قريش هندي)."
+    },
+    "Chiken-2":{
+        "en":"chiken Tikka Masala",
+        "ar":"دجاج تكا ماسالا" 
+},
+"Grilled":{
+    "en":"Grilled chicken pieces in a rich, spiced tomato sauce",
+        "ar":"قطع الدجاج المشوية في صلصة الطماطم الغنية والمتبلة"
+},
+"dal makhani":{
+        "en":"Dal Makhani",
+            "ar":"دال ماخاني"
+},
+"slow-cooked":{
+            "en":"Slow-cooked black lentils in a buttery sauce, often served with rice or naan",
+            "ar":"عدس أسود مطبوخ ببطء في صلصة زبدانية، وغالبا ما يقدم مع الأرز أو خبز النان"},
+        
+"aloo":{
+ "en":"Aloo Gobi",
+ "ar":"ألو جوبي"
+            },
+        
+            "spiced":{
+                   "en":" Spiced potato and cauliflower dish, often served as a side.",
+                   "ar":"طبق متبل من البطاطس والقرنبيط، غالبًا ما يقدم كطبق جانبي"
+            },
+            "Palak":{
+                "en":"Palak Paneer",
+                "ar":"بالاك بانير"
+            },
+            "Paneer1":{
+                "en":" Paneer in a rich butter and tomato gravy",
+                "ar":"بانير في زبدة غنية ومرق الطماطم"
+            
+        },
+        "Butt":{
+            "en":"Butter Chiken",
+                "ar":"دجاج بالزبدة"
+        },
+        "Chana":{
+            "en":"Chana Masla",
+            "ar":"شانا ماسالا"  
+    },
+    "Spiced":{
+        "en":"Spiced chickpeas cooked with onions and tomatoes",
+        "ar":"حمص متبل مطبوخ مع البصل والطماطم"
+    },
+    "Dal":{
+        "en":"Dal Makhani",
+        "ar":"دال ماخاني"
+    },
+    "Para":{
+        "en":"Paratha",
+        "ar":"باراثا"
+    },
+    "Paneer-B":{
+        "en":"Paneer Biryani",
+        "ar":"بانير برياني"
+    },
+    "Aro":{
+        "en":"Aromatic basmati rice cooked with marinated Panner or vegetables.",
+        "ar":"أرز بسمتي عطري مطبوخ مع بانر متبل أو خضار."
+    },
+    "jeera":{
+        "en":"Jeera Rice",
+            "ar":"جيرا رايس"
+    },
+    "Basmati":{
+        "en":"Basmati rice tempered with cumin seeds",
+        "ar":"أرز بسمتي مطهو مع بذور الكمون"
+    },
+    "Pula":{
+        "en":"Pulao",
+        "ar":"بولاو"
+    },
+    "Rice":{
+        "en":"Rice cooked with mixed vegetables and spices",
+        "ar":"أرز مطبوخ مع الخضار المشكلة والبهارات"
+    },
+    "test-t":{
+        "en": "Testimonial",
+        "ar": "شهادة"
+    },
+    "our-c":{
+        "en": "Our Clients Say!!!",
+        "ar": "يقول عملاؤنا!!!"
+    },
+    "sep-c":{
+        "en": "Specializing in exquisite custom cakes for birthdays, anniversaries, and kids' celebrations, delivering quality and creativity with every order.",
+        "ar": "متخصصون في الكعك المخصص الرائع لأعياد الميلاد واحتفالات الذكرى السنوية واحتفالات الأطفال، ونقدم الجودة والإبداع مع كل طلب."
+    },
+    "cl-t":{
+        "en": "Client Name",
+        "ar": "اسم العميل"
+    },
+    "pro-t":{
+        "en": "Profession",
+        "ar": "اسم العميل"
+    },
+    "meal-1":{
+        "en": "Delicious Meal",
+        "ar": "وجبة لذيذة"
+    },
+    "cont-c":{
+        "en": "Contact Us",
+        "ar": "اتصل بنا"
+    },
+    "cont-c1":{
+        "en": "Contact",
+        "ar": "اتصال"
+    },
+    "cont-q":{
+        "en": "Contact For Any Query",
+        "ar": "الاتصال للحصول على أي استفسار"
+    },
+    "book-c":{
+        "en": "Booking",
+        "ar": "الحجز"
+    },
+    "gen-c":{
+        "en": "General",
+        "ar": "عام"
+    },
+    "tech-c":{
+        "en": "Technical",
+        "ar": "اِصطِلاحِيّ"
+    },
+    "your-e":{
+        "en": "Your Email",
+        "ar": "البريد الإلكتروني الخاص بك"
+    },
+    "your-n":{
+        "en": "Your Name",
+        "ar": "اسمك"
+    },
+    "sub":{
+        "en": "Subject",
+        "ar": "موضوع"
+    },
+    "mess":{
+        "en": "Message",
+        "ar": "رسالة"
+    },
+    "s-mess":{
+        "en": "Send Message",
+        "ar": "أرسل رسالة"
+    },
+    "team":{
+        "en": "Team",
+        "ar": "فريق"
+    },
+    "team-m":{
+        "en": "Team Members",
+        "ar": "أعضاء الفريق"
+    },
+    "our-mas":{
+        "en": "Our Master Chefs",
+        "ar": "كبار الطهاة لدينا"
+    },
+    "full-n":{
+        "en": "Full Name",
+        "ar": "الاسم الكامل"
+    },
+    "desi-t":{
+        "en": "Designation",
+        "ar": "تعيين"
+    }
+
+
+}
